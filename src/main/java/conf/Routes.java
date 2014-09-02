@@ -18,14 +18,11 @@ package conf;
 
 import com.google.inject.Inject;
 
+import controllers.*;
 import ninja.AssetsController;
 import ninja.Router;
 import ninja.application.ApplicationRoutes;
 import ninja.utils.NinjaProperties;
-import controllers.ApiController;
-import controllers.ApplicationController;
-import controllers.ArticleController;
-import controllers.LoginLogoutController;
 
 public class Routes implements ApplicationRoutes {
     
@@ -80,7 +77,11 @@ public class Routes implements ApplicationRoutes {
         ///////////////////////////////////////////////////////////////////////    
         router.GET().route("/assets/.*").with(AssetsController.class, "serve");
         router.GET().route("/webjars/{fileName: .*}").with(AssetsController.class, "serveWebJars");
-        
+
+
+        router.GET().route("/frutas.json").with(FrutaController.class, "getAllFrutas");
+
+
         ///////////////////////////////////////////////////////////////////////
         // Index / Catchall shows index page
         ///////////////////////////////////////////////////////////////////////
