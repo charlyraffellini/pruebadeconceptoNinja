@@ -16,6 +16,7 @@
 
 package conf;
 
+import models.FrutasBag;
 import ninja.appengine.AppEngineModule;
 
 import com.google.inject.AbstractModule;
@@ -30,6 +31,7 @@ public class Module extends AbstractModule {
         
         bind(StartupActions.class);
         bind(Objectify.class).toProvider(ObjectifyProvider.class);
+        bind(FrutasBag.class);
         install(new AppEngineModule());        
         
     }
