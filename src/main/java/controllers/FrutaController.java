@@ -1,7 +1,9 @@
 package controllers;
 
+import ninja.Context;
 import ninja.Result;
 import ninja.Results;
+import ninja.params.Param;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,6 +20,13 @@ public class FrutaController {
         frutas.add(new FrutaDto("apple", "red"));
         return Results.json().render(frutas);
     }
+
+    public Result postAFruta(@Param("name") String name,
+                             @Param("color") String color,
+                             Context context){
+        return Results.json().render("CHABON SE GUARDO");
+    }
+
 }
 
 
