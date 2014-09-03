@@ -3,7 +3,3 @@ language: java
 install: "mvn clean install"
 
 script:"mvn appengine:update -Pupdate"
-
-branches:
-  only:
-    - develop
