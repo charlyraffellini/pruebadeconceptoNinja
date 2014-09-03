@@ -3,3 +3,6 @@ language: java
 install: "mvn clean install"
 
 script:"mvn appengine:update -Pupdate"
+
+jdk:
+    - oraclejdk7
