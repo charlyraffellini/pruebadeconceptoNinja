@@ -1,0 +1,7 @@
+language: java
+script:"mvn appengine:update -Pupdate"
+
+# whitelist
+branches:
+  only:
+    - develop
