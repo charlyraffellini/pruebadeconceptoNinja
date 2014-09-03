@@ -1,8 +1,8 @@
 language: java
 
-install: "mvn clean install"
+install: mvn clean install
 
-script:"mvn appengine:update -Pupdate"
+script: mvn appengine:update -Pupdate
 
 jdk:
     - oraclejdk7
