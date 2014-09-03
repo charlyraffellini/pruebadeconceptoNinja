@@ -29,6 +29,9 @@ public class FrutaController {
     public Result postAFruta(@Param("name") String name,
                              @Param("color") String color,
                              Context context){
-        return Results.json().render("DNI DE LA BOLSA DE FRUTA  " + bag.hashCode());
+        return Results.json().render("DNI DE LA BOLSA DE FRUTA  "
+                + bag.hashCode()
+                + "\n with name: " + name
+                + "\n and color: " + color);
     }
 }
