@@ -128,6 +128,10 @@
                 <configuration>
                     <appId>endless-memento-685</appId>
                     <version>1-war</version>
+                    <email>del0al99@gmail.com</email>
+                    <oauth2>false</oauth2>
+                    <noCookies>true</noCookies>
+                    <passin>true</passin>
                     <jvmFlags>
                         <!-- see also: http://blog.cwill-dev.com/2011/11/22/grails-java-lang-outofmemoryerror-permgen-space/ -->
                         <jvmFlag>-Xms512m</jvmFlag>
