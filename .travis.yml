@@ -4,7 +4,7 @@ install: mvn clean install
 
 before_script:
     - wget https://storage.googleapis.com/appengine-sdks/featured/appengine-java-sdk-1.9.9.zip -nv
-    - unzip -qd google_appengine_1.9.9.zip
+    - unzip -q google_appengine_1.9.9.zip
     - echo $GAE_PASS | ./appengine-java-sdk-1.9.9/bin/appcfg.sh --email=del0al99@gmail.com --passin update ./src/main/webapp
 
 
